@@ -1,0 +1,93 @@
+from enum import Enum
+
+class RelicPiece(Enum):
+    HEAD = "Head"
+    HANDS = "Hands"
+    BODY = "Body"
+    FEET = "Feet"
+    ORB = "Planar Sphere"
+    ROPE = "Link Rope"
+
+class SubstatTypes(Enum):
+    HP_FLAT = "HP"
+    HP_PERCENT = "HP_"
+    ATK_FLAT = "ATK"
+    ATK_PERCENT = "ATK_"
+    DEF_FLAT = "DEF"
+    DEF_PERCENT = "DEF_"
+    SPEED = "SPD"
+    BREAK_EFFECT = "Break Effect_"
+    EFFECT_RES = "Effect RES_"
+    EFFECT_HIT_RATE = "Effect Hit Rate_"
+    CRIT_RATE = "CRIT Rate_"
+    CRIT_DAMAGE = "CRIT DMG_"
+
+class RelicSets(Enum):
+    BAND_OF_SIZZLING_THUNDER = "Band of Sizzling Thunder"
+    CHAMPION_OF_STREETWISE_BOXING = "Champion of Streetwise Boxing"
+    EAGLE_OF_TWILIGHT_LINE = "Eagle of Twilight Line"
+    FIRESMITH_OF_LAVA_FORGING = "Firesmith of Lava-Forging"
+    GENIUS_OF_BRILLIANT_STARS = "Genius of Brilliant Stars"
+    GUARD_OF_WUTHERING_SNOW = "Guard of Wuthering Snow"
+    HERO_OF_TRIUMPHANT_SONG = "Hero of Triumphant Song"
+    HUNTER_OF_GLACIAL_FOREST = "Hunter of Glacial Forest"
+    IRON_CAVALRY_AGAINST_THE_SCOURGE = "Iron Cavalry Against the Scourge"
+    KNIGHT_OF_PURITY_PALACE = "Knight of Purity Palace"
+    LONGEVOUS_DISCIPLE = "Longevous Disciple"
+    MESSENGER_TRAVERSING_HACKERSPACE = "Messenger Traversing Hackerspace"
+    MUSKETEER_OF_WILD_WHEAT = "Musketeer of Wild Wheat"
+    PASSERBY_OF_WANDERING_CLOUD = "Passerby of Wandering Cloud"
+    PIONEER_DIVER_OF_DEAD_WATERS = "Pioneer Diver of Dead Waters"
+    POET_OF_MOURNING_COLLAPSE = "Poet of Mourning Collapse"
+    PRISONER_IN_DEEP_CONFINEMENT = "Prisoner in Deep Confinement"
+    SACERDOS_RELIVED_ORDEAL = "Sacerdos' Relived Ordeal"
+    SCHOLAR_LOST_IN_ERUDITION = "Scholar Lost in Erudition"
+    SELF_ENSHROUDED_RECLUSE = "Self-Enshrouded Recluse"
+    THE_ASHBLAZING_GRAND_DUKE = "The Ashblazing Grand Duke"
+    THE_WIND_SOARING_VALOROUS = "The Wind-Soaring Valorous"
+    THIEF_OF_SHOOTING_METEOR = "Thief of Shooting Meteor"
+    WARRIOR_GODDESS_OF_SUN_AND_THUNDER = "Warrior Goddess of Sun and Thunder"
+    WASTELANDER_OF_BANDITRY_DESERT = "Wastelander of Banditry Desert"
+    WATCHMAKER_MASTER_OF_DREAM_MACHINATIONS = "Watchmaker, Master of Dream Machinations"
+    WAVESTRIDER_CAPTAIN = "Wavestrider Captain"
+    WORLD_REMAKING_DELIVERER = "World-Remaking Deliverer"
+    AMPHOREUS_THE_ETERNAL_LAND = "Amphoreus, The Eternal Land"
+    ARCADIA_OF_WOVEN_DREAMS = "Arcadia of Woven Dreams"
+    BELOBOG_OF_THE_ARCHITECTS = "Belobog of the Architects"
+    BONE_COLLECTION_S_SERENE_DEMESNE = "Bone Collection's Serene Demesne"
+    BROKEN_KEEL = "Broken Keel"
+    CELESTIAL_DIFFERENTIATOR = "Celestial Differentiator"
+    DURAN_DYNASTY_OF_RUNNING_WOLVES = "Duran, Dynasty of Running Wolves"
+    FIRMAMENT_FRONTLINE_GLAMOTH = "Firmament Frontline: Glamoth"
+    FLEET_OF_THE_AGELESS = "Fleet of the Ageless"
+    FORGE_OF_THE_KALPAGNI_LANTERN = "Forge of the Kalpagni Lantern"
+    GIANT_TREE_OF_RAPT_BROODING = "Giant Tree of Rapt Brooding"
+    INERT_SALSOTTO = "Inert Salsotto"
+    IZUMO_GENSEI_AND_TAKAMA_DIVINE_REALM = "Izumo Gensei and Takama Divine Realm"
+    LUSHAKA_THE_SUNKEN_SEAS = "Lushaka, the Sunken Seas"
+    PAN_COSMIC_COMMERCIAL_ENTERPRISE = "Pan-Cosmic Commercial Enterprise"
+    PENACONY_LAND_OF_THE_DREAMS = "Penacony, Land of the Dreams"
+    REVELRY_BY_THE_SEA = "Revelry by the Sea"
+    RUTILANT_ARENA = "Rutilant Arena"
+    SIGONIA_THE_UNCLAIMED_DESOLATION = "Sigonia, the Unclaimed Desolation"
+    SPACE_SEALING_STATION = "Space Sealing Station"
+    SPRIGHTLY_VONWACQ = "Sprightly Vonwacq"
+    TALIA_KINGDOM_OF_BANDITRY = "Talia: Kingdom of Banditry"
+    TENGOKU_LIVESTREAM = "Tengoku Livestream"
+    THE_WONDROUS_BANANAMUSEMENT_PARK = "The Wondrous BananAmusement Park"
+
+
+
+class SubstatValue:   #For a single substat
+    def __init__(self, type: SubstatTypes, value: float, count: int = 0):
+        self.type = type
+        self.value = value
+        self.count = count
+
+    def display_value(self):
+        if self.type.value.endswith("_"):
+            return f"{self.value}%"
+        return f"{self.value}"
+
+    def __str__(self):
+        return f"{self.type.value}: {self.display_value()} (Rolls: {self.count}"
