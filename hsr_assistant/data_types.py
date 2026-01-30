@@ -8,7 +8,7 @@ class RelicPiece(Enum):
     ORB = "Planar Sphere"
     ROPE = "Link Rope"
 
-class SubstatTypes(Enum):
+class Substats(Enum):
     HP_FLAT = "HP"
     HP_PERCENT = "HP_"
     ATK_FLAT = "ATK"
@@ -21,6 +21,24 @@ class SubstatTypes(Enum):
     EFFECT_HIT_RATE = "Effect Hit Rate_"
     CRIT_RATE = "CRIT Rate_"
     CRIT_DAMAGE = "CRIT DMG_"
+
+class Mainstats(Enum):
+    HP_PERCENT = "HP"
+    ATK_PERCENT = "ATK"
+    DEF_PERCENT = "DEF"
+    SPEED = "SPD"
+    BREAK_EFFECT = "Break Effect"
+    EFFECT_HIT_RATE = "Effect Hit Rate"
+    CRIT_RATE = "CRIT Rate"
+    CRIT_DAMAGE = "CRIT DMG"
+    QUANTUM_DMG_BOOST = "Quantum DMG Boost"
+    FIRE_DMG_BOOST = "Fire DMG Boost"
+    ICE_DMG_BOOST = "Ice DMG Boost"
+    IMAGINARY_DMG_BOOST = "Imaginary DMG Boost"
+    PHYSICAL_DMG_BOOST = "Physical DMG Boost"
+    WIND_DMG_BOOST = "Wind DMG Boost"
+    LIGHTNING_DMG_BOOST = "Lightning DMG Boost"
+    ENERGY_REGEN_RATE = "Energy Regeneration Rate"
 
 class RelicSets(Enum):
     BAND_OF_SIZZLING_THUNDER = "Band of Sizzling Thunder"
@@ -78,16 +96,3 @@ class RelicSets(Enum):
 
 
 
-class SubstatValue:   #For a single substat
-    def __init__(self, type: SubstatTypes, value: float, count: int = 0):
-        self.type = type
-        self.value = value
-        self.count = count
-
-    def display_value(self):
-        if self.type.value.endswith("_"):
-            return f"{self.value}%"
-        return f"{self.value}"
-
-    def __str__(self):
-        return f"{self.type.value}: {self.display_value()} (Rolls: {self.count}"
