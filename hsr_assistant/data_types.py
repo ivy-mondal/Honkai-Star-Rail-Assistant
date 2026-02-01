@@ -1,6 +1,6 @@
 from enum import Enum
 
-class RelicPiece(Enum):
+class RelicPieces(Enum):
     HEAD = "Head"
     HANDS = "Hands"
     BODY = "Body"
