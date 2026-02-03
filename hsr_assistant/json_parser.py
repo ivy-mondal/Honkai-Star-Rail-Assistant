@@ -15,13 +15,8 @@ def parse_substat(substat_data: dict) -> Substat:
     substat_name = find_enum_member_by_value(Substats, substat_key_str)
 
     raw_value = float(substat_data.get("value"))
-    if substat_key_str.endswith("_"):
-        processed_value = raw_value * 100
-    else:
-        processed_value = raw_value
 
-    return Substat(substat_type=substat_name, value=processed_value)
-
+    return Substat(substat_type=substat_name, value=raw_value)
 
 def parse_relic_data(json_file_path: str) -> list[Relic]:
     with open(json_file_path, 'r', encoding='utf-8') as f:
@@ -56,7 +51,7 @@ def parse_relic_data(json_file_path: str) -> list[Relic]:
                 level=relic_level,
                 mainstat=mainstat_name,
                 substats=substats,
-                is_equipped=is_equipped != ""
+                equipped=is_equipped != ""
             ))
 
         except (KeyError, ValueError) as e:

@@ -39,6 +39,7 @@ class Mainstats(Enum):
     WIND_DMG_BOOST = "Wind DMG Boost"
     LIGHTNING_DMG_BOOST = "Lightning DMG Boost"
     ENERGY_REGEN_RATE = "Energy Regeneration Rate"
+    HEALING_BONUS = "Outgoing Healing Boost"
 
 class RelicSets(Enum):
     BAND_OF_SIZZLING_THUNDER = "Band of Sizzling Thunder"
@@ -91,7 +92,7 @@ class RelicSets(Enum):
     SPACE_SEALING_STATION = "Space Sealing Station"
     SPRIGHTLY_VONWACQ = "Sprightly Vonwacq"
     TALIA_KINGDOM_OF_BANDITRY = "Talia: Kingdom of Banditry"
-    TENGOKU_LIVESTREAM = "Tengoku Livestream"
+    TENGOKU_LIVESTREAM = "Tengoku@Livestream"
     THE_WONDROUS_BANANAMUSEMENT_PARK = "The Wondrous BananAmusement Park"
 
 
