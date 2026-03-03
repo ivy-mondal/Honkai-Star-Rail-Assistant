@@ -1,4 +1,4 @@
-from hsr_assistant.data_types import Substats, RelicSets, RelicPieces, Mainstats
+from hsr_assistant.data_types import Substats, RelicSets, RelicPieces, Mainstats, CharacterName, Path, Element
 
 
 class Substat:  # For a single substat
@@ -43,3 +43,12 @@ class Relic:  # For a single relic
                 f"  Mainstat:  {self.mainstat.value}\n"
                 f"  Substats:\n{indentation}{sub_str}\n"
                 f"  Equipment status:  {equipped_info}\n")
+
+
+class BaseCharacterStats: #For a single maxed character without relics
+    def __init__(self, name: CharacterName, path: Path, element: Element,
+                 health: float, attack: float, defense: float, speed: float,
+                 crit_rate: float, crit_damage: float,
+                 break_effect: float, healing_bonus: float,
+                 energy_regen_rate: float, effect_hit_rate: float,
+                 effect_res: float, elation: float, damage_bonus: float):
