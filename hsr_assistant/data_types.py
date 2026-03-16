@@ -41,7 +41,7 @@ class Mainstats(Enum):
     ENERGY_REGEN_RATE = "Energy Regeneration Rate"
     HEALING_BONUS = "Outgoing Healing Boost"
 
-class RelicSets(Enum):
+class RelicSets(Enum):    # UPDATED 4.0
     BAND_OF_SIZZLING_THUNDER = "Band of Sizzling Thunder"
     CHAMPION_OF_STREETWISE_BOXING = "Champion of Streetwise Boxing"
     EAGLE_OF_TWILIGHT_LINE = "Eagle of Twilight Line"
@@ -97,7 +97,7 @@ class RelicSets(Enum):
     DIVINER_OF_DISTANT_REACH = "Diviner of Distant Reach"
     EVER_GLORIOUS_MAGICAL_GIRL = "Ever-Glorious Magical Girl"
 
-class CharacterName(Enum):
+class CharacterName(Enum):  #UPDATED 4.0
     TRAILBLAZER = "Trailblazer"
     BAILU = "Bailu"
     BRONYA = "Bronya"
@@ -175,8 +175,9 @@ class CharacterName(Enum):
     CYRENE = "Cyrene"
     THE_DAHLIA = "The Dahlia"
     YAO_GUANG = "Yao Guang"
+    SPARXIE = "Sparxie"
 
-class Path(Enum):
+class Path(Enum):  #UPDATED 4.0
     DESTRUCTION = "Destruction"
     THE_HUNT = "Hunt"
     ERUDITION = "Erudition"
@@ -187,7 +188,7 @@ class Path(Enum):
     REMEMBRANCE = "Remembrance"
     ELATION = "Elation"
 
-class Element(Enum):
+class Element(Enum): #UPDATED 4.0
     PHYSICAL = "Physical"
     FIRE = "Fire"
     ICE = "Ice"
