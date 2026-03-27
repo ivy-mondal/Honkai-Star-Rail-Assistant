@@ -5,5 +5,5 @@ def name_prepares(string):
     uppercased_words = [word.upper() for word in words]
     return "_".join(uppercased_words)
 
-print(name_prepares("The Wondrous BananAmusement Park"))
+print(name_prepares("The Finale of a Lie"))
 

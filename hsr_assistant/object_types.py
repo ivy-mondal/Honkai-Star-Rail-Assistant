@@ -1,4 +1,5 @@
-from hsr_assistant.data_types import Substats, RelicSets, RelicPieces, Mainstats, CharacterName, Path, Element
+from hsr_assistant.data_types import Substats, RelicSets, RelicPieces, Mainstats, CharacterName, Path, Element, \
+    LightCones
 
 
 class Substat:  # For a single substat
@@ -101,27 +102,31 @@ class BaseCharacterStats: #For a single maxed character without relics
                 f"DEF % from Traces: {self.def_percent}%\n"
                 )
 
-clara_base_stats = BaseCharacterStats(   #5
-    name= CharacterName.CLARA,
-    path= Path.DESTRUCTION,
-    element= Element.PHYSICAL,
-    health=1241.856,
-    attack=737.352,
-    defense=485.1,
-    speed=90,
-    crit_rate=5,
-    crit_damage=50,
-    break_effect=0.0,
-    healing_bonus=0.0,
-    energy_regen_rate=0.0,
-    effect_hit_rate=0.0,
-    effect_res=0.0,
-    elation=0.0,
-    elemental_damage_bonus=14.4,
-    hp_percent=10,
-    def_percent=0.0,
-    atk_percent=28
-)
+class LightConeStats: #For a single maxed lightcone for additional base stats only
+    def __init__(self, name: LightCones, path: Path,
+                 health: float, attack: float, defense: float,
+                 additional_stat_name: Mainstats | None = None,
+                 additional_stat_value: float = 0.0):
+        self.name = name
+        self.path = path
+        self.health = health
+        self.attack = attack
+        self.defense = defense
+        self.additional_stat_name = additional_stat_name
+        self.additional_stat_value = additional_stat_value
 
+    def get_additional_stat_value(self) -> float | None: # Use | None for type hinting if it can be None
+        if self.additional_stat_name is not None:
+            return self.additional_stat_value
+        return None
 
-print(clara_base_stats)
+    def __str__(self):
+        # We start with the common parts of the string
+        base_string = (f"Name: {self.name.value}\n"
+                       f"Path: {self.path.value}\n"
+                       f"Health: {self.health}\n"
+                       f"Attack: {self.attack}\n"
+                       f"Defense: {self.defense}\n")
+        if self.additional_stat_name is not None:
+            base_string += f"{self.additional_stat_name.value}: {self.additional_stat_value}\n"
+        return base_string

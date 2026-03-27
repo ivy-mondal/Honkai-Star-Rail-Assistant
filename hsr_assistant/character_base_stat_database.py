@@ -1,7 +1,7 @@
 from data_types import CharacterName, Path, Element
 from object_types import BaseCharacterStats
 
-# UPDATED 4.0
+# UPDATED 4.1
 trailblazer_physical_base_stats = BaseCharacterStats(    #1
     name= CharacterName.TRAILBLAZER,
     path= Path.DESTRUCTION,
@@ -1801,8 +1801,30 @@ sparxie_base_stats = BaseCharacterStats(  #84
     effect_res=0.0,
     elation=28.0,
     elemental_damage_bonus=0.0,
-    hp_percent=18,
-    def_percent=12.5,
-    atk_percent=28
+    hp_percent=0.0,
+    def_percent=0.0,
+    atk_percent=0.0
+)
+
+ashveil_base_stats = BaseCharacterStats(  #85
+    name= CharacterName.ASHVEIL,
+    path= Path.THE_HUNT,
+    element= Element.LIGHTNING,
+    health=853.776,
+    attack=776.16,
+    defense=388.08,
+    speed=106,
+    crit_rate=5,
+    crit_damage=87.3,
+    break_effect=0.0,
+    healing_bonus=0.0,
+    energy_regen_rate=0.0,
+    effect_hit_rate=0.0,
+    effect_res=0.0,
+    elation=0.0,
+    elemental_damage_bonus=14.4,
+    hp_percent=0.0,
+    def_percent=0.0,
+    atk_percent=10.0
 )
 
