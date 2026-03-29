@@ -46,7 +46,7 @@ class Relic:  # For a single relic
                 f"  Equipment status:  {equipped_info}\n")
 
 
-class BaseCharacterStats: #For a single maxed character without relics
+class BaseCharacterStats:  # For a single maxed character without relics
     def __init__(self, name: CharacterName, path: Path, element: Element,
                  health: float, attack: float, defense: float, speed: float,
                  crit_rate: float, crit_damage: float,
@@ -73,7 +73,6 @@ class BaseCharacterStats: #For a single maxed character without relics
         self.hp_percent = hp_percent
         self.atk_percent = atk_percent
         self.def_percent = def_percent
-
 
     def get_elemental_damage_bonus_for_element(self, query_element: Element) -> float:
         if self.element == query_element:
@@ -102,7 +101,8 @@ class BaseCharacterStats: #For a single maxed character without relics
                 f"DEF % from Traces: {self.def_percent}%\n"
                 )
 
-class LightConeStats: #For a single maxed lightcone for additional base stats only
+
+class LightConeStats:  # For a single maxed lightcone for additional base stats only
     def __init__(self, name: LightCones, path: Path,
                  health: float, attack: float, defense: float,
                  additional_stat_one_name: Mainstats | None = None,
@@ -119,14 +119,12 @@ class LightConeStats: #For a single maxed lightcone for additional base stats on
         self.additional_stat_two_name = additional_stat_two_name
         self.additional_stat_two_value = additional_stat_two_value
 
-
     def __str__(self):
-        # We start with the common parts of the string
         output_string = (f"Name: {self.name.value}\n"
-                       f"Path: {self.path.value}\n"
-                       f"Health: {self.health}\n"
-                       f"Attack: {self.attack}\n"
-                       f"Defense: {self.defense}\n")
+                         f"Path: {self.path.value}\n"
+                         f"Health: {self.health}\n"
+                         f"Attack: {self.attack}\n"
+                         f"Defense: {self.defense}\n")
 
         if self.additional_stat_one_name is not None:
             output_string += f"{self.additional_stat_one_name.value}: {self.additional_stat_one_value}\n"
@@ -136,45 +134,96 @@ class LightConeStats: #For a single maxed lightcone for additional base stats on
 
         return output_string
 
-# 1. Lightcone with NO additional stats
-lc_no_extra = LightConeStats(
-    name=LightCones.PAST_AND_FUTURE,
-    path=Path.HARMONY,
-    health=952,
-    attack=476,
-    defense=396,
-    # additional_stat_one/two will default to None/0.0
-)
-print("--- Light Cone with NO additional stats ---")
-print(lc_no_extra)
-print("-" * 40)
 
-# 2. Lightcone with ONE additional stat (Crit Damage)
-lc_one_stat = LightConeStats(
-    name=LightCones.CHORUS,
-    path=Path.ERUDITION,
-    health=1058,
-    attack=582,
-    defense=463,
-    additional_stat_one_name=Mainstats.CRIT_DAMAGE,
-    additional_stat_one_value=0.15 # 15% Crit Damage
-)
-print("--- Light Cone with ONE additional stat (Crit DMG) ---")
-print(lc_one_stat)
-print("-" * 40)
+class TargetBuilds:  # Target stats for each character builds
+    def __init__(self, name: CharacterName, build_name=str,
+                 cavern_set_name: RelicSets | None = None, planar_set_name: RelicSets | None = None,
+                 body_mainstat: Mainstats | None = None, feet_mainstat: Mainstats | None = None, orb_mainstat: Mainstats | None = None, rope_mainstat: Mainstats | None = None,
+                 target_substat_one: Substats | None = None, target_substat_two: Substats | None = None, target_substat_three: Substats | None = None,
+                 target_substat_four: Substats | None = None, target_substat_five: Substats | None = None, target_substat_six: Substats | None = None,
+                 target_stat_one_name: Mainstats | None = None, target_stat_one_value: float = 0.0,
+                 target_stat_two_name: Mainstats | None = None, target_stat_two_value: float = 0.0,
+                 target_stat_three_name: Mainstats | None = None, target_stat_three_value: float = 0.0,
+                 target_stat_four_name: Mainstats | None = None, target_stat_four_value: float = 0.0,
+                 target_stat_five_name: Mainstats | None = None, target_stat_five_value: float = 0.0,
+                 target_stat_six_name: Mainstats | None = None, target_stat_six_value: float = 0.0,
+                 target_stat_seven_name: Mainstats | None = None, target_stat_seven_value: float = 0.0):
+        self.name = name
+        self.build_name = build_name
+        self.cavern_set_name = cavern_set_name
+        self.planar_set_name = planar_set_name
+        self.body_mainstat = body_mainstat
+        self.feet_mainstat = feet_mainstat
+        self.orb_mainstat = orb_mainstat
+        self.rope_mainstat = rope_mainstat
+        self.target_substat_one = target_substat_one
+        self.target_substat_two = target_substat_two
+        self.target_substat_three = target_substat_three
+        self.target_substat_four = target_substat_four
+        self.target_substat_five = target_substat_five
+        self.target_substat_six = target_substat_six
+        self.target_stat_one_name = target_stat_one_name
+        self.target_stat_one_value = target_stat_one_value
+        self.target_stat_two_name = target_stat_two_name
+        self.target_stat_two_value = target_stat_two_value
+        self.target_stat_three_name = target_stat_three_name
+        self.target_stat_three_value = target_stat_three_value
+        self.target_stat_four_name = target_stat_four_name
+        self.target_stat_four_value = target_stat_four_value
+        self.target_stat_five_name = target_stat_five_name
+        self.target_stat_five_value = target_stat_five_value
+        self.target_stat_six_name = target_stat_six_name
+        self.target_stat_six_value = target_stat_six_value
+        self.target_stat_seven_name = target_stat_seven_name
+        self.target_stat_seven_value = target_stat_seven_value
 
-# 3. Lightcone with TWO additional stats (HP% and Speed)
-lc_two_stats = LightConeStats(
-    name=LightCones.MEDIATION,
-    path=Path.THE_HUNT,
-    health=1200,
-    attack=600,
-    defense=500,
-    additional_stat_one_name=Mainstats.HP_PERCENT,
-    additional_stat_one_value=0.12, # 12% HP
-    additional_stat_two_name=Mainstats.SPEED,
-    additional_stat_two_value=6 # 6 Speed
-)
-print("--- Light Cone with TWO additional stats (HP% and Speed) ---")
-print(lc_two_stats)
-print("-" * 40)
+    def __str__(self):
+        output_string = (f"Name: {self.name.value}\n"
+                         f"Build Name: {self.build_name}\n"
+                         f"Cavern Set: {self.cavern_set_name.value}\n"
+                         f"Planar Set: {self.planar_set_name.value}\n"
+                         f"Body Mainstat: {self.body_mainstat.value}\n"
+                         f"Feet Mainstat: {self.feet_mainstat.value}\n"
+                         f"Orb Mainstat: {self.orb_mainstat.value}\n"
+                         f"Rope Mainstat: {self.rope_mainstat}\n")
+
+        if self.target_substat_one is not None:
+            output_string += f"Substat needed: {self.target_substat_one.value}\n"
+
+        if self.target_substat_two is not None:
+            output_string += f"Substat needed: {self.target_substat_two.value}\n"
+
+        if self.target_substat_three is not None:
+            output_string += f"Substat needed: {self.target_substat_three.value}\n"
+
+        if self.target_substat_four is not None:
+            output_string += f"Substat needed: {self.target_substat_four.value}\n"
+
+        if self.target_substat_five is not None:
+            output_string += f"Substat needed: {self.target_substat_five.value}\n"
+
+        if self.target_substat_six is not None:
+            output_string += f"Substat needed: {self.target_substat_six.value}\n"
+
+        if self.target_stat_one_name is not None:
+            output_string += f"{self.target_stat_one_name.value}: {self.target_stat_one_value}\n"
+
+        if self.target_stat_two_name is not None:
+            output_string += f"{self.target_stat_two_name.value}: {self.target_stat_two_value}\n"
+
+        if self.target_stat_three_name is not None:
+            output_string += f"{self.target_stat_three_name.value}: {self.target_stat_three_value}\n"
+
+        if self.target_stat_four_name is not None:
+            output_string += f"{self.target_stat_four_name.value}: {self.target_stat_four_value}\n"
+
+        if self.target_stat_five_name is not None:
+            output_string += f"{self.target_stat_five_name.value}: {self.target_stat_five_value}\n"
+
+        if self.target_stat_six_name is not None:
+            output_string += f"{self.target_stat_six_name.value}: {self.target_stat_six_value}\n"
+
+        if self.target_stat_seven_name is not None:
+            output_string += f"{self.target_stat_seven_name.value}: {self.target_stat_seven_value}\n"
+
+        return output_string

@@ -178,7 +178,7 @@ jingyuan_physical_base_stats = BaseCharacterStats(    #8
     atk_percent=28
 )
 
-seele_base_stats = BaseCharacterStats(   #9
+seele_base_stats = BaseCharacterStats(   #9 not built
     name= CharacterName.SEELE,
     path= Path.THE_HUNT,
     element= Element.QUANTUM,
@@ -200,7 +200,7 @@ seele_base_stats = BaseCharacterStats(   #9
     atk_percent=28
 )
 
-welt_base_stats = BaseCharacterStats(    #10
+welt_base_stats = BaseCharacterStats(    #10 not built
     name= CharacterName.WELT,
     path= Path.NIHILITY,
     element= Element.IMAGINARY,
@@ -222,7 +222,7 @@ welt_base_stats = BaseCharacterStats(    #10
     atk_percent=28
 )
 
-yanqing_base_stats = BaseCharacterStats(   #11
+yanqing_base_stats = BaseCharacterStats(   #11 not built
     name= CharacterName.YANQING,
     path= Path.THE_HUNT,
     element= Element.ICE,
@@ -244,7 +244,7 @@ yanqing_base_stats = BaseCharacterStats(   #11
     atk_percent=28
 )
 
-arlan_base_stats = BaseCharacterStats(   #12
+arlan_base_stats = BaseCharacterStats(   #12 not built
     name= CharacterName.ARLAN,
     path= Path.DESTRUCTION,
     element= Element.LIGHTNING,
@@ -266,7 +266,7 @@ arlan_base_stats = BaseCharacterStats(   #12
     atk_percent=28
 )
 
-asta_base_stats = BaseCharacterStats(    #13
+asta_base_stats = BaseCharacterStats(    #13 Not built
     name= CharacterName.ASTA,
     path= Path.HARMONY,
     element= Element.FIRE,
@@ -288,7 +288,7 @@ asta_base_stats = BaseCharacterStats(    #13
     atk_percent=0.0
 )
 
-dan_heng_base_stats = BaseCharacterStats(    #14
+dan_heng_base_stats = BaseCharacterStats(    #14 Not Built
     name= CharacterName.DAN_HENG,
     path= Path.THE_HUNT,
     element= Element.WIND,
@@ -310,7 +310,7 @@ dan_heng_base_stats = BaseCharacterStats(    #14
     atk_percent=18
 )
 
-mini_herta_base_stats = BaseCharacterStats( #16
+mini_herta_base_stats = BaseCharacterStats( #15 Not Built
     name= CharacterName.HERTA,
     path= Path.ERUDITION,
     element= Element.ICE,
@@ -332,7 +332,7 @@ mini_herta_base_stats = BaseCharacterStats( #16
     atk_percent=0.0
 )
 
-hook_base_stats = BaseCharacterStats(  #17
+hook_base_stats = BaseCharacterStats(  #16 Not Built
     name= CharacterName.HOOK,
     path= Path.DESTRUCTION,
     element= Element.FIRE,
@@ -354,7 +354,7 @@ hook_base_stats = BaseCharacterStats(  #17
     atk_percent=28
 )
 
-march_7th_base_stats = BaseCharacterStats(  #18
+march_7th_base_stats = BaseCharacterStats(  #17
     name= CharacterName.MARCH_7TH,
     path= Path.PRESERVATION,
     element= Element.ICE,
@@ -376,7 +376,7 @@ march_7th_base_stats = BaseCharacterStats(  #18
     atk_percent=0.0
 )
 
-natasha_base_stats = BaseCharacterStats(  #19
+natasha_base_stats = BaseCharacterStats(  #18 Not built
     name= CharacterName.NATASHA,
     path= Path.ABUNDANCE,
     element= Element.PHYSICAL,

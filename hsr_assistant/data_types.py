@@ -44,6 +44,9 @@ class Mainstats(Enum):
     X_DMG_BOOST = "DMG Bonus" # Added for LC effects
     SPEED_PERCENT = "Speed Percent" #Added for LC effects
     ELATION_DMG = "Elation DMG Bonus"  #Added for LC effects
+    ATTACK_FLAT = "Attack" #For target build
+    DEFENSE_FLAT = "Defense" #For  target build
+    HEALTH_FLAT = "Health" #For target build
 
 class RelicSets(Enum):    # UPDATED 4.1
     BAND_OF_SIZZLING_THUNDER = "Band of Sizzling Thunder"
