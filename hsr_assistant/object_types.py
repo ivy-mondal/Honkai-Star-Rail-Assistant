@@ -105,28 +105,76 @@ class BaseCharacterStats: #For a single maxed character without relics
 class LightConeStats: #For a single maxed lightcone for additional base stats only
     def __init__(self, name: LightCones, path: Path,
                  health: float, attack: float, defense: float,
-                 additional_stat_name: Mainstats | None = None,
-                 additional_stat_value: float = 0.0):
+                 additional_stat_one_name: Mainstats | None = None,
+                 additional_stat_one_value: float = 0.0,
+                 additional_stat_two_name: Mainstats | None = None,
+                 additional_stat_two_value: float = 0.0):
         self.name = name
         self.path = path
         self.health = health
         self.attack = attack
         self.defense = defense
-        self.additional_stat_name = additional_stat_name
-        self.additional_stat_value = additional_stat_value
+        self.additional_stat_one_name = additional_stat_one_name
+        self.additional_stat_one_value = additional_stat_one_value
+        self.additional_stat_two_name = additional_stat_two_name
+        self.additional_stat_two_value = additional_stat_two_value
 
-    def get_additional_stat_value(self) -> float | None: # Use | None for type hinting if it can be None
-        if self.additional_stat_name is not None:
-            return self.additional_stat_value
-        return None
 
     def __str__(self):
         # We start with the common parts of the string
-        base_string = (f"Name: {self.name.value}\n"
+        output_string = (f"Name: {self.name.value}\n"
                        f"Path: {self.path.value}\n"
                        f"Health: {self.health}\n"
                        f"Attack: {self.attack}\n"
                        f"Defense: {self.defense}\n")
-        if self.additional_stat_name is not None:
-            base_string += f"{self.additional_stat_name.value}: {self.additional_stat_value}\n"
-        return base_string
+
+        if self.additional_stat_one_name is not None:
+            output_string += f"{self.additional_stat_one_name.value}: {self.additional_stat_one_value}\n"
+
+        if self.additional_stat_two_name is not None:
+            output_string += f"{self.additional_stat_two_name.value}: {self.additional_stat_two_value}\n"
+
+        return output_string
+
+# 1. Lightcone with NO additional stats
+lc_no_extra = LightConeStats(
+    name=LightCones.PAST_AND_FUTURE,
+    path=Path.HARMONY,
+    health=952,
+    attack=476,
+    defense=396,
+    # additional_stat_one/two will default to None/0.0
+)
+print("--- Light Cone with NO additional stats ---")
+print(lc_no_extra)
+print("-" * 40)
+
+# 2. Lightcone with ONE additional stat (Crit Damage)
+lc_one_stat = LightConeStats(
+    name=LightCones.CHORUS,
+    path=Path.ERUDITION,
+    health=1058,
+    attack=582,
+    defense=463,
+    additional_stat_one_name=Mainstats.CRIT_DAMAGE,
+    additional_stat_one_value=0.15 # 15% Crit Damage
+)
+print("--- Light Cone with ONE additional stat (Crit DMG) ---")
+print(lc_one_stat)
+print("-" * 40)
+
+# 3. Lightcone with TWO additional stats (HP% and Speed)
+lc_two_stats = LightConeStats(
+    name=LightCones.MEDIATION,
+    path=Path.THE_HUNT,
+    health=1200,
+    attack=600,
+    defense=500,
+    additional_stat_one_name=Mainstats.HP_PERCENT,
+    additional_stat_one_value=0.12, # 12% HP
+    additional_stat_two_name=Mainstats.SPEED,
+    additional_stat_two_value=6 # 6 Speed
+)
+print("--- Light Cone with TWO additional stats (HP% and Speed) ---")
+print(lc_two_stats)
+print("-" * 40)

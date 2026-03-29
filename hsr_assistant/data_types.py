@@ -1,5 +1,4 @@
 from enum import Enum
-from resources.name_preparer import name_prepares
 
 class RelicPieces(Enum):
     HEAD = "Head"
@@ -30,6 +29,7 @@ class Mainstats(Enum):
     SPEED = "SPD"
     BREAK_EFFECT = "Break Effect"
     EFFECT_HIT_RATE = "Effect Hit Rate"
+    EFFECT_RES = "Effect RES" # Added for lightcones even if not actually a mainstat
     CRIT_RATE = "CRIT Rate"
     CRIT_DAMAGE = "CRIT DMG"
     QUANTUM_DMG_BOOST = "Quantum DMG Boost"
@@ -41,6 +41,9 @@ class Mainstats(Enum):
     LIGHTNING_DMG_BOOST = "Lightning DMG Boost"
     ENERGY_REGEN_RATE = "Energy Regeneration Rate"
     HEALING_BONUS = "Outgoing Healing Boost"
+    X_DMG_BOOST = "DMG Bonus" # Added for LC effects
+    SPEED_PERCENT = "Speed Percent" #Added for LC effects
+    ELATION_DMG = "Elation DMG Bonus"  #Added for LC effects
 
 class RelicSets(Enum):    # UPDATED 4.1
     BAND_OF_SIZZLING_THUNDER = "Band of Sizzling Thunder"
