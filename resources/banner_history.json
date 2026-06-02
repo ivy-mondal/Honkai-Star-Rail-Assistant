@@ -1,0 +1,93 @@
+[
+  {
+    "patch_number": "1.0",
+    "notable_about_patch": "Game just launched, so only character releases was the norm. First two limited DPS was released here.",
+    "new_releases": [
+      "Seele",
+      "Jing Yuan"
+    ],
+    "reruns": []
+  },
+  {
+    "patch_number": "1.1",
+    "notable_about_patch": "First ever limited banner debuffer and sustain was released here.",
+    "new_releases": [
+      "Silver Wolf",
+      "Luocha"
+    ],
+    "reruns": []
+  },
+  {
+    "patch_number": "1.2",
+    "notable_about_patch": "Damage over time, and hp scaling damage dealer archetype was released with Kafka and Blade.",
+    "new_releases": [
+      "Blade",
+      "Kafka"
+    ],
+    "reruns": []
+  },
+  {
+    "patch_number": "1.3",
+    "notable_about_patch": "Simulated Universe: Swarm Disaster expansion was added, which was catered towards the new released 5 stars this version. And first meta shift for the damage dealer occurred here with Lunae's release.Fu Xuan's release was hinting towards a mono quantum team possibility.",
+    "new_releases": [
+      "Dan Heng: Imbibitor Lunae",
+      "Fu Xuan"
+    ],
+    "reruns": []
+  },
+  {
+    "patch_number": "1.4",
+    "notable_about_patch": "Rerun banner system was introduced, but it was limited to one rerun each version alongside new releases. Release of Topaz signaled upcoming Follow-up Attack(FuA) archetype. Jingliu's release made big damage numbers accessible without much restrictions like Imbibitor Lunae, so another wave of meta shift but it was about the convenience of getting the same high numbers without much effort.",
+    "new_releases": [
+      "Jingliu",
+      "Topaz"
+    ],
+    "reruns": [
+      {
+        "character_name": "Seele",
+        "rerun_number": "1st Rerun",
+        "patches_since_last_appearance": 3,
+        "meta_strength_at_rerun": "Still considered a top tier damage dealer despite release of newer dpses like Jingliu and Imbibitor Lunae.",
+        "probable_rerun_reason": "She remained highly relevant due to her unmatched base speed, 'the Genius of Brilliant Stars' relic set shredding defense of enemies, and optimal team synergies, especially with Silver Wolf's weakness implant. Which meant Seele could be one of the two required team for Memory of Chaos regardless of enemy weakness match up."
+      }
+    ]
+  },
+  {
+    "patch_number": "1.5",
+    "notable_about_patch": "The Ashblazing Grand Duke (Follow-up attack set) and Prisoner in Deep Confinement (DoT set) was released, so the foundation for solidifying the two previously unsupported archetypes, FuA and DoT was being laid. The key support for the DoT archetype Kafka and for FuA archetype Topaz was pretty unsupported till now.",
+    "new_releases": [
+      "Huohuo",
+      "Argenti"
+    ],
+    "reruns": [
+      {
+        "character_name": "Silver Wolf",
+        "rerun_number": "1st Rerun",
+        "patches_since_last_appearance": 3,
+        "meta_strength_at_rerun": "Still considered a top tier debuffer as only other good debuffer was a 4 star Pela",
+        "probable_rerun_reason": "With her weakness implant, she was the lynchpin of the burgeoning Mono-Quantum meta team of Seele, Silver Wolf, Fu Xuan, which allowed players to brute-force almost any content in the game regardless of enemy weaknesses. Which was lucrative for players to have as a permanent team for Memory of Chaos which requires two teams. With Seele's recent rerun and Fu Xuan's release, devs were giving people, especially new players to assemble the Mono Quantum team."
+      }
+    ]
+  },
+  {
+    "patch_number": "1.6",
+    "noteable_about_patch": "Release of first limited banner Harmony character aka buffer who can buff whole team instead of only one character in a team. This was the last version before the whole 1.x cycle ended and a new planet was supposed to release. Also this patch introduced double rerun banners alongside new releases.",
+    "new_releases": ["Ruan Mei", "Dr Ratio"],
+    "reruns": [
+      {
+        "character_name": "Blade",
+        "rerun_number": "1st Rerun",
+        "patches_since_last_appearance": 3,
+        "meta_strength_at_rerun": "Was a solid A tier option. Eventhough his hypercarry was falling behind in DPS compared to newer carries, he found new identity in Dual dps teams.",
+        "probable_rerun_reason": "He formed a popular and powerful dual-carry core alongside Jingliu, who was released a patch ago, as his HP-draining mechanics synergized well with her setups. With Ruan Mei and Huohuo or Fu Xuan buffing whole team making the dual dps core even stronger. This is probably to give Jingliu players who didn't get Blade before, give a chance for the Dual Dps, which will make them pull Ruan Mei too."
+      },
+      {
+        "character_name": "Kafka",
+        "rerun_number": "1st Rerun",
+        "patches_since_last_appearance": 3,
+        "meta_strength_at_rerun": "Still S tier despite still not having a 5 star DoT applier.",
+        "probable_rerun_reason": "Even though she was still without a 5 star DoT applier to complete her team, but she recently received the DoT set, which made her DoT damage scale far higher. With Huohuo and Ruan Mei buffing, a meta DoT team was starting to shape up using the 4 star Sampo. Only missing one kep piece, who was drip marketed to release next patch. Black Swan, who was 5 star version of Sampo and far better. Devs were letting new players or people who intend to play DoT but doesn't have the main piece Kafka, a chance to get her."
+      }
+    ]
+  }
+]

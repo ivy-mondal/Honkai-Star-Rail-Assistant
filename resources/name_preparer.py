@@ -17,5 +17,16 @@ print(name_prepares_lower("The Finale of a Lie"))
 print(name_prepares_lower("Today's Good Luck"))
 print(name_prepares_lower("Thus Burns the Dawn"))
 
+"""
+{
+    "name": "",
+    "element": "",
+    "path": "",
+    "release_patch": "",
+    "role": "",
+    "meta_strength_at release": "",
+    "notes": ""
+  }
+"""
 
 

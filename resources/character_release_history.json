@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Seele",
+    "element": "Quantum",
+    "path": "Hunt",
+    "release_patch": "1.0",
+    "role": "Attack scaling, single target, crit based main dps",
+    "meta_strength_at release": "SS tier",
+    "notes": "First ever limited character release. Was considered a must pull during the release era of the game. She was better at AoE than single target due to her resurgence mechanics"
+  },
+  {
+    "name": "Jing Yuan",
+    "element": "Lightning",
+    "path": "Erudition",
+    "release_patch": "1.0",
+    "role": "Attack scaling, AoE target(targets all enemies),crit based, follow up attack main dps.",
+    "meta_strength_at release": "S tier",
+    "notes": "Due to flaws in kit, and not availability of supports who can fix his kit's flaw, he wasn't considered an overpowered unit by community. His AoE nature was good for farming."
+  },
+  {
+    "name": "Silver Wolf",
+    "element": "Quantum",
+    "path": "Nihility",
+    "release_patch": "1.1",
+    "role": "Single target Debuffer",
+    "meta_strength_at release": "SS tier",
+    "notes": "Due to her weakness implanting ability, debuffing enemies which amplifies damage drastically, and availability of F2P event lightcone, she was highly regarded as one of the best supports and universal team enablers in the game."
+  },
+  {
+    "name": "Luocha",
+    "element": "Imaginary",
+    "path": "Abundance",
+    "release_patch": "1.1",
+    "role": "Attack based healer",
+    "meta_strength_at release": "SS tier",
+    "notes": "The game's first limited 5-star sustain character who was also skill point friendly, had cleanse, and AoE buff dispelling from  enemies. He was highly sought out character at release."
+  },
+  {
+    "name": "Blade",
+    "element": "Wind",
+    "path": "Destruction",
+    "release_patch": "1.2",
+    "role": "Major HP scaling, minor attack scaling, blast target(targets 3 enemies at a time), crit based main dps, who can be sub dps too",
+    "meta_strength_at release": "S tier",
+    "notes": "The game's first dual scaling character. He was valued for his Skill point friendly nature, self-sustain, and unique HP-scaling mechanics"
+  },
+  {
+    "name": "Kafka",
+    "element": "Lightning",
+    "path": "Nihility",
+    "release_patch": "1.2",
+    "role": "Non crit, Damage Over Time(DoT) archetype character",
+    "meta_strength_at release": "S tier",
+    "notes": "The defining core of the game's Damage Over Time (DoT) archetype. Her unique ability to instantly detonate DoT effects means DoT teams can't be played properly without her, however she needed DoT applicators aka damage dealers, which lacked at the time of release, she only had 4 stars for that role in team."
+  },
+  {
+    "name": "Dan Heng: Imbibitor Lunae",
+    "element": "Imaginary",
+    "path": "Destruction",
+    "release_patch": "1.3",
+    "role": "Attack scaling, blast target, crit based main dps",
+    "meta_strength_at release": "S tier",
+    "notes": "He had very high multiplier, so absurdly high damage at the time. However, his 3 skill points for enhanced basic attack required strict team composition with lots of skill point-positive supports and rotation planning to feed him resources and play him as hypercarry."
+  },
+  {
+    "name": "Fu Xuan",
+    "element": "Quantum",
+    "path": "Preservation",
+    "release_patch": "1.3",
+    "role": "HP scaling, teamwide damage absorbing sustain, with minor buffing capability",
+    "meta_strength_at release": "SS tier",
+    "notes": "Alongside her sustaining, she had permanent, team-wide buffs including 10% Crit Rate and increased Max HP, hence she was considered must pull at that time."
+  },
+  {
+    "name": "Jingliu",
+    "element": "Ice",
+    "path": "Destruction",
+    "release_patch": "1.4",
+    "role": "Attack scaling, blast target, crit based main dps",
+    "meta_strength_at release": "SS tier",
+    "notes": "Due to being easy to build as her Spectral Transmigration state provided up to a massive 50% CRIT Rate, allowing players to build almost entirely into CRIT Damage , with good F2P lightcone and teammate options, her enhanced state did not consuming Skill Points giving team flexibility, she was widely considered the strongest overall damage dealer at the E0 (Eidolon 0) level, outperforming other top options like Dan Heng Imbibitor Lunae and Seele in raw damage and versatility. And she could play dual DPS combo with Blade due to their hp draining synergies."
+  },
+  {
+    "name": "Topaz",
+    "element": "Fire",
+    "path": "Hunt",
+    "release_patch": "1.4",
+    "role": "Attack scaling, single target, follow up attack, crit based sub dps",
+    "meta_strength_at release": "A tier",
+    "notes": "She was designed as a specialized sub-DPS and support for follow-up attack teams. Her ranking was lower because the game lacked a wide variety of FuA damage dealers to fully maximize her kit at her release"
+  },
+  {
+    "name": "Huohuo",
+    "element": "Wind",
+    "path": "Abundance",
+    "release_patch": "1.5",
+    "role": "HP scaling, teamwide healer with minor buffing capabilities",
+    "meta_strength_at release": "S tier",
+    "notes": "She was the first Abundance character to act as an offensive battery. Her Ultimate regenerated energy and boosted ATK for the whole team, her skill automatically cleansed debuffs from allies. But her healing capabilities were significantly lower and consumed far more skill points than other sustains at that time. The sheer offensive utility she brought outweighed the cost for most hypercarry teams for most players. She benefited energy dependent carries like Argenti with her energy regeneration. And her teamwide attack buffing was very useful for DoT teams."
+  },
+  {
+    "name": "Argenti",
+    "element": "Physical",
+    "path": "Erudition",
+    "release_patch": "1.5",
+    "role": "Attack scaling, AoE target, ultimate dependent, crit based main dps who can also act as sub dps",
+    "meta_strength_at release": "A tier",
+    "notes": "He was the premier AoE and speed-farming unit due to his unique 180-energy Ultimate and rapid energy regeneration, but was considered a niche pull by the masses as AoE wasn't that good for Memory of Chaos endgame back then."
+  },
+  {
+    "name": "Ruan Mei",
+    "element": "Ice",
+    "path": "Harmony",
+    "release_patch": "1.6",
+    "role": "Team wide buffer, increased break efficiency, speed, gave All-Type RES Penetration, damage boost, break extension to enemies and break effect.",
+    "meta_strength_at release": "SS tier",
+    "notes": "She was the game's first limited 5-star Harmony character. Widely regarded as the ultimate universal support, and became a staple in nearly every meta team, be it hypercarry, or dual DPS or DoT, due to her unprecedented buffs also being teamwide. She was a must pull character"
+  },
+  {
+    "name": "Dr Ratio",
+    "element": "Imaginary",
+    "path": "Hunt",
+    "release_patch": "1.6",
+    "role": "Attack scaling, single target, follow up attack, crit based main dps.",
+    "meta_strength_at release": "S tier",
+    "notes": "Although he had incredibly high damage output in single target, but he heavily relied on debuffs. To guarantee his follow-up attacks hit and to trigger the best relics, players needed to pair him with debuffers like Silver Wolf, Pela, or Topaz."
+  },
+  {
+    "name": "",
+    "element": "",
+    "path": "",
+    "release_patch": "",
+    "role": "",
+    "meta_strength_at release": "",
+    "notes": ""
+  },
+  {
+    "name": "",
+    "element": "",
+    "path": "",
+    "release_patch": "",
+    "role": "",
+    "meta_strength_at release": "",
+    "notes": ""
+  },
+  {
+    "name": "",
+    "element": "",
+    "path": "",
+    "release_patch": "",
+    "role": "",
+    "meta_strength_at release": "",
+    "notes": ""
+  },
+  {
+    "name": "",
+    "element": "",
+    "path": "",
+    "release_patch": "",
+    "role": "",
+    "meta_strength_at release": "",
+    "notes": ""
+  },
+  {
+    "name": "",
+    "element": "",
+    "path": "",
+    "release_patch": "",
+    "role": "",
+    "meta_strength_at release": "",
+    "notes": ""
+  },
+  {
+    "name": "",
+    "element": "",
+    "path": "",
+    "release_patch": "",
+    "role": "",
+    "meta_strength_at release": "",
+    "notes": ""
+  }
+]
