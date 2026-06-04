@@ -1,4 +1,4 @@
-from hsr_assistant.data_types import Substats, RelicSets, RelicPieces, Mainstats, CharacterName, Path, Element, \
+from relic_optimizer.data_types import Substats, RelicSets, RelicPieces, Mainstats, CharacterName, Path, Element, \
     LightCones
 
 

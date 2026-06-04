@@ -1,6 +1,6 @@
 import json
-from hsr_assistant.data_types import RelicPieces, Substats, Mainstats, RelicSets
-from hsr_assistant.object_types import Substat, Relic
+from relic_optimizer.data_types import RelicPieces, Substats, Mainstats, RelicSets
+from relic_optimizer.object_types import Substat, Relic
 
 
 def find_enum_member_by_value(enum_class, value_str):

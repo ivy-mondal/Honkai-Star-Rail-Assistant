@@ -1,4 +1,4 @@
-from hsr_assistant.json_parser import parse_relic_data
+from relic_optimizer.json_parser import parse_relic_data
 
 if __name__ == "__main__":
     json_path = "sample_file.json"
